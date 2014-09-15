@@ -1,0 +1,60 @@
+#lpfa_image {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+#lpfa_footer {
+  clear: both;
+  font-size: .83em;
+}
+
+#lpfa_controls {
+  display: none;
+}
+
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #FF0000,
+    #FF0000 10px,
+    #FF7F00 10px,
+    #FF7F00 20px
+  );
+  padding: 1em;
+}
+
+body > div {
+  background: #FFFFFF;
+  border: 2px solid;
+  border-radius: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+header > h1 {
+  margin-bottom: 0;
+   font-size: 1.5em;
+}
+
+header > h1 > a:link, header > h1 > a:visited,
+header > h1 > a:active, header > h1 > a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header > p {
+  margin-top: 0;
+}
+
+article h2 {
+  font-size: 1.17em;
+}
+
+article {
+  margin-left: 2em;
+}
+
+#lpfa_slideno {
+  width: 5em;
+}

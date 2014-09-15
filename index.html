@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Learn to program with fundamental algorithms</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1><a href="./index.html">Learn to program with fundamental algorithms</a></h1>
+        <p>A free illustrated book for beginners</p>
+      </header>
+      <nav id="lpfa_menu">
+        Go to lesson: <script>lpfa.gen_menu()</script>
+      </nav>
+      <main>
+        <article>
+          <div id="lpfa_controls">
+            <h2>Lesson <span id="lpfa_number">INTRO</span> - <span id="lpfa_title">Comic</span></h2>
+            <nav>
+              <button type="button" title="previous slide" onclick="lpfa.prev_slide()">&lt;</button>
+              <input type="number" min="1" step="1" id="lpfa_slideno">
+              <button onclick="lpfa.go()">go</button>
+              <button type="button" title="next slide" onclick="lpfa.next_slide()">&gt;</button> or spacebar/enter and backspace. Bookmarks work.
+            </nav>
+          </div>
+          <figure>
+            <img id="lpfa_image" src="mafalda_e_snoopy.jpg">
+            <figcaption id="lpfa_text"><p>Translation from Italian:<br>(Snoopy, by Charles) Computers are becoming smaller and smaller.<br>(Mafalda, by Quino) Also men's brains.<p>(Antonio) Charles and Quino, please forgive me for this bad drawing. It's my first drawing and my first important book too...<br>(Charles) No worries, I like it.<br>(Quino) No te preocupes, me gusta.<p><a href="javascript:lpfa.load_lesson(0)">Start to learn...</a></p></figcaption>
+          </figure>
+        </article>
+      </main>
+      <footer id="lpfa_footer">
+        <p>Copyright <a href="../">Antonio Bonifati</a> 2014</p>
+      </footer>
+    </div>
+  </body>
+</html>
