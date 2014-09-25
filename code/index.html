@@ -16,7 +16,16 @@
           <dt>Lessons 1-2</dt>
           <dd><a href="1-2/numbers_io.rkt">numbers_io.rkt</a></dd>
           <dt>Lesson 3</dt>
-          <dd><a href="3/horse.rkt">horse.rkt</a></dd>
+          <dd>
+            <a href="3/horse.rkt">horse.rkt</a>, frames: 
+            <script>
+              for (var lpfa_i = 1; lpfa_i <= 12; lpfa_i++) {
+                document.write((lpfa_i != 1 ? ', ' : '') + '<a href="3/horse'
+                    + (lpfa_i < 10 ? '0' : '') + lpfa_i + '.jpg">' + lpfa_i
+                    + '</a>');
+              }
+            </script>
+          </dd>
         </dl>
       </nav>
       <footer id="lpfa_footer">
