@@ -21,7 +21,9 @@ var lpfa = {
 
   display_slide: function() {
     with (this) {
-      $('lpfa_image').src = lesson_path + lesson[slide_no][0] + '.png';
+      var imgname = lesson[slide_no][0];
+      $('lpfa_image').src = lesson_path + imgname 
+        + (typeof imgname == 'number' ? '.png' : '');
       $('lpfa_text').innerHTML = lesson[slide_no][1];
       $('lpfa_slideno').value = slide_no + 1;
       window.history.replaceState({}, document.title, window.location.pathname
